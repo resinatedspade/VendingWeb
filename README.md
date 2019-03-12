@@ -1,6 +1,6 @@
-       /VendingMachine.html
+VendingMachine.html
       
-       /Vendingjavascript.js
+Vendingjavascript.js
       
-       /Vendingcss.css
+Vendingcss.css
       
