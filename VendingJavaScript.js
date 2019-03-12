@@ -46,7 +46,7 @@ function addNickel() {
 function loadItems() {
     $.ajax({
         type: "GET",
-        url: "http://tsg-vending.herokuapp.com/items",
+        url: "https://tsg-vending.herokuapp.com/items",
 
         success: function (itemData) {
             console.log("I GOT items");
