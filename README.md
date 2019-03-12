@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-
-<!-- 
-	Name: Andrew Darr
-	Date Created: 13 Jan, 2019
-	Most recent revision: 13 Jan, 2019
--->
-
-<html lang="en">
-
 <head>
 
     <meta charset="utf-8">
@@ -135,6 +125,3 @@
                 loadItems();
             });
         </script>
-</body>
-
-</html>
