@@ -1,0 +1,174 @@
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    border: forestgreen;
+    border-style: solid;
+    background: black;
+    color: forestgreen;
+    font-style: inherit;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+#vendingPurchase {
+    text-align: center;
+    border: forestgreen;
+    color: forestgreen;
+    background: black;
+    border-style: solid;
+}
+
+#returnChange {
+    background-color:black;
+    border-style: solid;
+    border-color: forestgreen;
+    color: forestgreen;
+    color: forestgreen;
+    padding: 5px 31px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 4px;
+}
+
+#makePurchase {
+    background-color:black;
+    border-style: solid;
+    border-color: forestgreen;
+    color: forestgreen;
+    color: forestgreen;
+    padding: 5px 31px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 4px;
+}
+
+
+
+#dollar {
+    background-color:black;
+    border-style: solid;
+    border-color: forestgreen;
+    color: forestgreen;
+    padding: 5px 31px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 4px;
+    height: 35px;
+    width: 100px;
+    text-align: center;
+}
+
+#quarter{
+    background-color:black;
+    border-style: solid;
+    border-color: forestgreen;
+    color: forestgreen;
+    color: forestgreen;
+    padding: 5px 31px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 4px;
+    height: 35px;
+    width: 100px;
+    text-align: center;
+}
+
+#dime {
+    background-color:black;
+    border-style: solid;
+    border-color: forestgreen;
+    color: forestgreen;
+    color: forestgreen;
+    padding: 5px 31px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 4px;
+    height: 35px;
+    width: 100px;
+    text-align: center;
+}
+
+#nickel {
+    background-color:black;
+    border-style: solid;
+    border-color: forestgreen;
+    color: forestgreen;
+    color: forestgreen;
+    padding: 5px 31px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 4px;
+    height: 35px;
+    width: 100px;
+    text-align: center;
+}
+
+#itemTable {
+    flex: 0 0 33.333333%;
+    max-width: 32.333333%;
+    background: black;
+    border: forestgreen;
+    border-style: solid;
+    color: forestgreen;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-bottom: 10px;
+}
+
+.form-control[readonly] {
+    background-color: black;
+    opacity: 1;
+    color: forestgreen;
+    border-color: forestgreen;
+    /* height: 38px;
+    width: 284px; */
+}
+
+.form-control:focus {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: forestgreen;
+    background-color: black;
+    background-clip: padding-box;
+    border-color: forestgreen;
+    border-radius: .25rem;
+    /* height: 38px;
+    width: 284px; */
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: forestgreen;
+    background-color: black;
+    background-clip: padding-box;
+    border-color: forestgreen;
+    border-radius: .25rem;
+    /* height: 38px;
+    width: 284px; */
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+
+  body{
+      background-color: black;
+  }
