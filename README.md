@@ -1,5 +1,3 @@
-<head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -13,12 +11,6 @@
     <script src="VendingJavaScript.js"></script>
 
     <title>Vending</title>
-
-</head>
-
-
-<body>
-
 
     <div id="vendingMachine" class="col-12">
         <h1>Vending Machine</h1>
