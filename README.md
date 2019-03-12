@@ -1,8 +1,6 @@
-# vendingmachine
-
-        vendingmachine/VendingMachine.html
+       vendingmachine/VendingMachine.html
       
-        vendingmachine/Vendingjavascript.js
+       vendingmachine/Vendingjavascript.js
       
-        vendingmachine/Vendingcss.css
+       vendingmachine/Vendingcss.css
       
