@@ -16,30 +16,25 @@ function addMoney(total) {
 
 function addDollar() {
 
-    var dollars = document.getElementById("dollar").setAttribute = 100;
-    console.log(dollars);
-    total = total + dollars;
+    total = total + 100;
     addMoney(total);
 }
 
 function addQuarter() {
-    var quarters = document.getElementById("quarter").setAttribute = 25;
-    console.log(quarters);
-    total = total + quarters;
+
+    total = total + 25;
     addMoney(total);
 }
 
 function addDime() {
-    var dimes = document.getElementById("dime").setAttribute = 10
-    console.log(dimes);
-    total = total + dimes;
+
+    total = total + 10;
     addMoney(total);
 }
 
 function addNickel() {
-    var nickels = document.getElementById("nickel").setAttribute = 5
-    console.log(nickels);
-    total = total + nickels;
+
+    total = total + 5;
     addMoney(total);
 }
 
