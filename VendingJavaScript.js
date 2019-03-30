@@ -128,7 +128,7 @@ function MakePurchase(id) {
 
 function returnChange(returnChangeTotal) {
     if (total == 0) {
-
+        return document.getElementById("change").value = "No Change Do.";
     } else {
         var changeAmount = currentMoney * 100;
         var quarters = (changeAmount - (changeAmount % 25)) / 25;
