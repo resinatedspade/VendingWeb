@@ -7,7 +7,7 @@ function messages(message) {
 
 var currentMoney = 0;
 var total = 0;
-function updateMoney(total) {
+function addMoney(total) {
     currentMoney = total / 100;
     document.getElementById("addedMoney").value = "$" + currentMoney;
     console.log(total);
@@ -16,36 +16,41 @@ function updateMoney(total) {
 
 function addDollar() {
 
-    total = total + 100;
+    var dollars = document.getElementById("dollar").setAttribute = 100;
+    console.log(dollars);
+    total = total + dollars;
     addMoney(total);
 }
 
 function addQuarter() {
-
-    total = total + 25;
+    var quarters = document.getElementById("quarter").setAttribute = 25;
+    console.log(quarters);
+    total = total + quarters;
     addMoney(total);
 }
 
 function addDime() {
-
-    total = total + 10;
+    var dimes = document.getElementById("dime").setAttribute = 10
+    console.log(dimes);
+    total = total + dimes;
     addMoney(total);
 }
 
 function addNickel() {
-
-    total = total + 5;
+    var nickels = document.getElementById("nickel").setAttribute = 5
+    console.log(nickels);
+    total = total + nickels;
     addMoney(total);
 }
 
 function loadItems() {
     $.ajax({
         type: "GET",
-        url: "http://tsg-vending.herokuapp.com/items",
+        url: "https://tsg-vending.herokuapp.com/items",
 
         success: function (itemData) {
             console.log("I GOT items");
-            // console.log(itemData);
+            console.log(itemData);
 
             var itemsAsHtml = "";
 
@@ -57,13 +62,12 @@ function loadItems() {
 
                 itemsAsHtml = itemsAsHtml +
 
-                    '<div onClick="getId(' + item.id + ')" id="itemTable" class="col-sm-4"><div name="id"'
-                'class="col-sm-12" style="text-align:left"> ID: '
+                    '<div onClick="getId('+ item.id +')" id="itemTable" class="col-sm-4"><div  name="id" class="col-sm-12" style="text-align:left"> ID: '
                     + item.id + '</div><div class="col-sm-12">'
                     + item.name + '</div><div class="col-sm-12">$'
                     + item.price + '</div><div class="col-sm-12">Quantity: '
                     + item.quantity + '</div></div>'
-                console.log("#id");
+                    console.log("#id");
             };
 
             document.getElementById("itemList").innerHTML = itemsAsHtml;
@@ -90,14 +94,6 @@ function MakePurchase(id) {
         var itemChoice = document.getElementById("itemId").value;
     }
 
-    var reg = /^-?\d*\.?\d*$/;
-    
-    if (currentMoney == null) {
-        currentMoney = 0;
-    } else if (currentMoney.match(reg)) {
-        currentMoney = 0;
-    }
-
     $.ajax({
         type: "GET",
         url: "http://tsg-vending.herokuapp.com/money/" + currentMoney + "/item/" + itemChoice,
@@ -105,14 +101,14 @@ function MakePurchase(id) {
             "Accept": "application/json"
         },
 
-        success: function (change, msg, reqObj) {
+        success: function (change, status, stuff) {
             console.log("Made a purchase");
             console.log(change);
+            console.log(status);
+            console.log(stuff);
             message = "Thank You For Purchase!";
             messages(message);
             loadItems();
-            total = total - total;
-            addMoney(total);
             return document.getElementById("change").value =
                 "Quarters: " + change.quarters + " Dime: " + change.dimes + " Nickels: "
                 + change.nickels + " Pennies: " + change.pennies;
@@ -129,7 +125,7 @@ function MakePurchase(id) {
 
 function returnChange(returnChangeTotal) {
     if (total == 0) {
-        return document.getElementById("change").value = "No Change Do.";
+
     } else {
         var changeAmount = currentMoney * 100;
         var quarters = (changeAmount - (changeAmount % 25)) / 25;
