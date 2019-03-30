@@ -89,12 +89,14 @@ function MakePurchase(id) {
         var itemChoice = document.getElementById("itemId").value;
     }
     
-    var reg = /^-?\d*\.?\d*$/;
-    
-    if (currentMoney == null) {
+    var reg = /[^0-9.]/;
+    var stringCurrentMoney = currentMoney;
+    if (String(stringCurrentMoney).match (reg)) {
         currentMoney = 0;
-    } else if (currentMoney.match(reg)) {
-        currentMoney = 0;
+        console.log(currentMoney);
+    } else {
+        
+        console.log(currentMoney);
     }
 
     $.ajax({
