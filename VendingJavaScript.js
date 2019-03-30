@@ -88,6 +88,14 @@ function MakePurchase(id) {
     } else {
         var itemChoice = document.getElementById("itemId").value;
     }
+    
+    var reg = /^-?\d*\.?\d*$/;
+    
+    if (currentMoney == null) {
+        currentMoney = 0;
+    } else if (currentMoney.match(reg)) {
+        currentMoney = 0;
+    }
 
     $.ajax({
         type: "GET",
